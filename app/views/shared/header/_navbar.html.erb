@@ -1,0 +1,16 @@
+<header>
+  <div class="navbar-fixed">
+    <nav class="top-nav cyan valign-wrapper">
+      <div class="container">
+        <a href="<%= root_path %>" class="brand-logo">Spevack Twins</a>
+          <ul class="right hide-on-med-and-down">
+            <%= render 'shared/header/login' %>
+          </ul>
+        </div>
+      </nav>
+  </div>
+
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><%= link_to "Logout", logout_path %></li>
+  </ul>
+</header>
