@@ -2,8 +2,10 @@ FactoryGirl.define do
   factory :user do
     provider "Google"
     uid "1234"
+    name "Jesse Spevack"
     first_name "Jesse"
     last_name "Spevack"
+    image { Faker::Placeholdit.image }
     email "jesse@example.com"
     token "my_token"
     refresh_token "another_token"

@@ -5,6 +5,10 @@ RSpec.feature "user logs out" do
     stub_omniauth
 
     visit root_path
+    
+    within ".navbar-fixed" do
+      click_link "Sign in with Google"
+    end
 
     within "#dropdown1" do
       click_link "Logout"
