@@ -1,8 +1,8 @@
 example_id                                                | status | run_time        |
 --------------------------------------------------------- | ------ | --------------- |
-./spec/features/admin/login_to_photo_new_spec.rb[1:1]     | passed | 0.0416 seconds  |
-./spec/features/log_in_out/log_in_spec.rb[1:1]            | passed | 0.22042 seconds |
-./spec/features/log_in_out/log_out_spec.rb[1:1]           | passed | 0.03018 seconds |
-./spec/features/user/can_not_visit_photo_new_spec.rb[1:1] | passed | 0.04053 seconds |
-./spec/models/user_spec.rb[1:1]                           | passed | 0.02808 seconds |
-./spec/models/user_spec.rb[1:2:1]                         | passed | 0.00128 seconds |
+./spec/features/admin/login_to_photo_new_spec.rb[1:1]     | passed | 0.04525 seconds |
+./spec/features/log_in_out/log_in_spec.rb[1:1]            | passed | 0.03472 seconds |
+./spec/features/log_in_out/log_out_spec.rb[1:1]           | passed | 0.20523 seconds |
+./spec/features/user/can_not_visit_photo_new_spec.rb[1:1] | passed | 0.035 seconds   |
+./spec/models/user_spec.rb[1:1]                           | passed | 0.0287 seconds  |
+./spec/models/user_spec.rb[1:2:1]                         | passed | 0.00094 seconds |

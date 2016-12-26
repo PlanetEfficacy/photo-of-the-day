@@ -20,4 +20,5 @@
 /config/application.yml
 coverage
 
-spec/examples.txt
+# Ignore spec examples
+/spec/examples.txt
