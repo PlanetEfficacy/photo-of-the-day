@@ -13,10 +13,13 @@
         <%= f.text_area :caption, class: "materialize-textarea" %>
       </div>
 
+      <%= f.label :date %>
+      <%= f.date_field :date, class: "datepicker"%>
+
       <div class="file-field input-field">
         <div class="btn btn-flat waves-effect waves-light cyan accent-2">
           <span>File</span>
-          <input name="Photo" type="file">
+          <%= f.file_field :photo %>
         </div>
         <div class="file-path-wrapper">
           <input class="file-path validate" type="text">

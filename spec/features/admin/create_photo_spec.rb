@@ -8,13 +8,14 @@ RSpec.feature "admin uploads photo" do
 
     fill_in "Title", with: "My photo title"
     fill_in "Caption", with: "My photo caption"
-    attach_file("Photo", Rails.root + "spec/fixtures/dummy.png")
+    fill_in "Date", with: "12/28/2016"
+    attach_file "photo[photo]", Rails.root + "spec/fixtures/dummy.png"
     click_button "Upload"
 
     expect(current_path).to eq(photos_path)
     within ".photo-of-the-day" do
-      expect(page).to have_content("My photo title.")
-      expect(page).to have_content("My photo caption.")
+      expect(page).to have_content("My photo title")
+      expect(page).to have_content("My photo caption")
       expect(page).to have_css("img")
     end
   end
