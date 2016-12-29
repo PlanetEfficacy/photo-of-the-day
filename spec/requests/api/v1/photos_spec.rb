@@ -1,8 +1,10 @@
 require 'rails_helper'
 
-describe "get to /photos" do
+RSpec.describe "get to /photos" do
   it "returns all photos" do
-    create_list :photo, count: 2
+    user = create :user
+    create_list :photo, 2
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     get "/api/v1/photos"
     photo = JSON.parse(response.body)
 
