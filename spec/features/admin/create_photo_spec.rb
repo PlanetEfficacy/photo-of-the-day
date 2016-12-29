@@ -8,7 +8,7 @@ RSpec.feature "admin uploads photo" do
 
     fill_in "Title", with: "My photo title"
     fill_in "Caption", with: "My photo caption"
-    fill_in "Date", with: "12/28/2016"
+    fill_in "Date", with: "2015-12-29"
     attach_file "photo[photo]", Rails.root + "spec/fixtures/dummy.png"
     click_button "Upload"
 

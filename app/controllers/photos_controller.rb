@@ -17,7 +17,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new
     @photo.title = params[:photo][:title]
     @photo.caption = params[:photo][:caption]
-    @photo.date = Date.new(dates[2].to_i, dates[0].to_i, dates[1].to_i)
+    @photo.date = Time.parse(params[:photo][:date])
     @photo.photo = params[:photo][:photo]
     @photo.save
     if @photo
@@ -25,7 +25,4 @@ class PhotosController < ApplicationController
     end
   end
 
-  def dates
-    params[:photo][:date].split("/")
-  end
 end
