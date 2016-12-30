@@ -81,5 +81,4 @@ test:
 production:
   <<: *default
   database: photo_of_the_day_production
-  username: photo_of_the_day
-  password: <%= ENV['PHOTO_OF_THE_DAY_DATABASE_PASSWORD'] %>
+  
