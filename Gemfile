@@ -10,6 +10,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 gem 'rails_12factor', group: :production
 gem 'omniauth-google-oauth2'
+gem 'google-cloud'
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'byebug', platform: :mri
